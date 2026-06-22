@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Sistema Solar</title>
+  <style>
+    * { margin: 0; padding: 0; box-sizing: border-box; }
+    body {
+      font-family: 'Segoe UI', Arial, sans-serif;
+      background: #0b0c2a;
+      color: #e8e8f0;
+      line-height: 1.6;
+      padding: 40px 20px;
+    }
+    .contenedor {
+      max-width: 700px;
+      margin: 0 auto;
+    }
+    h1 {
+      text-align: center;
+      font-size: 2.5rem;
+      margin-bottom: 10px;
+      background: linear-gradient(90deg, #ffd86f, #fc6262);
+      -webkit-background-clip: text;
+      -webkit-text-fill-color: transparent;
+    }
+    p.intro {
+      text-align: center;
+      color: #a0a0c0;
+      margin-bottom: 30px;
+    }
+    .planetas {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(180px, 1fr));
+      gap: 18px;
+    }
+    .planeta {
+      background: #1a1c45;
+      padding: 20px;
+      border-radius: 12px;
+      border: 1px solid #2e3170;
+      transition: transform 0.2s;
+    }
+    .planeta:hover { transform: translateY(-5px); }
+    .planeta h3 {
+      color: #ffd86f;
+      margin-bottom: 6px;
+    }
+    .planeta span {
+      font-size: 0.85rem;
+      color: #9090b8;
+    }
+  </style>
+</head>
+<body>
+  <div class="contenedor">
+    <h1>🪐 Sistema Solar</h1>
+    <p class="intro">Los ocho planetas que orbitan alrededor del Sol</p>
+
+    <div class="planetas">
+      <div class="planeta"><h3>Mercurio</h3><span>El más cercano al Sol</span></div>
+      <div class="planeta"><h3>Venus</h3><span>El planeta más caliente</span></div>
+      <div class="planeta"><h3>Tierra</h3><span>Nuestro hogar</span></div>
+      <div class="planeta"><h3>Marte</h3><span>El planeta rojo</span></div>
+      <div class="planeta"><h3>Júpiter</h3><span>El más grande</span></div>
+      <div class="planeta"><h3>Saturno</h3><span>Famoso por sus anillos</span></div>
+      <div class="planeta"><h3>Urano</h3><span>Gira de lado</span></div>
+      <div class="planeta"><h3>Neptuno</h3><span>El más lejano</span></div>
+    </div>
+  </div>
+</body>
+</html>
